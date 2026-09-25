@@ -69,23 +69,31 @@ themeBtn.addEventListener("click", () => {
 // Hamburger Menu (Mobile)
 // ==============================
 
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
+const hamburger    = document.getElementById("hamburger");
+const mobileNav    = document.getElementById("mobile-nav");
+const mobileClose  = document.getElementById("mobile-nav-close");
+
+function openMobileNav() {
+    mobileNav.classList.add("open");
+    document.body.style.overflow = "hidden";
+    hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+}
+
+function closeMobileNav() {
+    mobileNav.classList.remove("open");
+    document.body.style.overflow = "";
+    hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+}
 
 hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    const isOpen = navLinks.classList.contains("open");
-    hamburger.innerHTML = isOpen
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
+    mobileNav.classList.contains("open") ? closeMobileNav() : openMobileNav();
 });
 
-// Close menu when a link is clicked
-document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    });
+mobileClose.addEventListener("click", closeMobileNav);
+
+// Close when any nav link is clicked
+document.querySelectorAll("#mobile-nav .nav-link").forEach(link => {
+    link.addEventListener("click", closeMobileNav);
 });
 
 
