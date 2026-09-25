@@ -1,0 +1,227 @@
+/* ============================================================
+   SPLASH — style.css
+   ============================================================ */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #080E1D;
+    color: #F1F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* subtle dot grid background */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(rgba(59,130,246,0.12) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+}
+
+/* ============================================================
+   CARD
+   ============================================================ */
+.splash {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 24px;
+    padding: 48px 44px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,0.06),
+        0 20px 60px rgba(0,0,0,0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* ============================================================
+   ELEMENTS
+   ============================================================ */
+
+/* badge */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4ADE80;
+    background: rgba(74,222,128,0.08);
+    border: 1px solid rgba(74,222,128,0.2);
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4ADE80;
+    flex-shrink: 0;
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1;   transform: scale(1);    }
+    50%       { opacity: 0.4; transform: scale(0.75); }
+}
+
+/* greeting */
+.greeting {
+    font-size: 16px;
+    font-weight: 400;
+    color: #94A3B8;
+    margin-bottom: 8px;
+}
+
+/* name */
+h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    color: #F8FAFC;
+    margin-bottom: 12px;
+}
+
+h1 span {
+    background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* typing role */
+.role {
+    font-size: 16px;
+    font-weight: 500;
+    color: #60A5FA;
+    min-height: 26px;
+    margin-bottom: 16px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 0.9em;
+    background: #3B82F6;
+    border-radius: 2px;
+    margin-left: 2px;
+    vertical-align: middle;
+    animation: blink 0.85s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+/* bio */
+.bio {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #94A3B8;
+    max-width: 400px;
+    margin-bottom: 28px;
+}
+
+/* button */
+#enterBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 32px;
+    border-radius: 10px;
+    background: #3B82F6;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+#enterBtn:hover {
+    background: #2563EB;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(59,130,246,0.4);
+}
+
+#enterBtn i {
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+#enterBtn:hover i { transform: translateX(4px); }
+
+/* social */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.04);
+    color: #94A3B8;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.social a:hover {
+    color: #3B82F6;
+    border-color: rgba(59,130,246,0.4);
+    background: rgba(59,130,246,0.1);
+    transform: translateY(-3px);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 480px) {
+    .card { padding: 36px 24px 32px; border-radius: 18px; }
+    #enterBtn { width: 100%; justify-content: center; }
+}

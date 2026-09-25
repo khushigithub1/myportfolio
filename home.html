@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanksha Srivastava | Portfolio</title>
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">Akanksha<span>.</span></a>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button id="theme-btn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <a href="assets/resume" class="resume-btn" download>Resume</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+
+    <div class="hero-content">
+        <div class="hero-tag">
+            <span class="hero-tag-dot"></span> Available for opportunities
+        </div>
+
+        <h1>Hi, I'm<br><span>Akanksha Srivastava</span></h1>
+
+        <h2><span id="typing"></span><span class="cursor"></span></h2>
+
+        <p class="hero-desc">
+            BCA graduate from KL University passionate about Machine Learning,
+            Data Analytics and AI. I build end-to-end data solutions that turn
+            raw numbers into real business impact.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+            <a href="#contact" class="btn-secondary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+        </div>
+
+        <div class="hero-social">
+            <a href="https://github.com/khushigithub1" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akanksha-srivastava-20a43623b/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:akankshasrivastav004@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="assets/resume" download aria-label="Resume">
+                <i class="fas fa-file-alt"></i>
+            </a>
+        </div>
+
+        <div class="hero-chips">
+            <span><i class="fab fa-python"></i> Python</span>
+            <span><i class="fas fa-brain"></i> Machine Learning</span>
+            <span><i class="fas fa-chart-bar"></i> Power BI</span>
+            <span><i class="fab fa-docker"></i> Docker</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <div class="section-title">
+        <span>ABOUT ME</span>
+        <h2>Who I Am</h2>
+    </div>
+
+    <div class="about-grid">
+
+        <!-- Left — Photo -->
+        <div class="about-photo-col">
+            <div class="about-photo-wrap">
+                <img src="professional image.png" alt="Akanksha Srivastava">
+                <div class="about-photo-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Scientist</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right — Bio + stats + traits -->
+        <div class="about-right">
+
+            <p class="about-intro">
+                I am a <strong>Computer Science graduate</strong> with a genuine passion for
+                transforming data into meaningful insights and solving real-world problems through technology.
+            </p>
+
+            <p class="about-bio">
+                My journey into Data Science has been driven by hands-on experience — practical projects
+                and industry internships that strengthened both my technical abilities and problem-solving mindset.
+                These experiences taught me the importance of understanding business needs, collaborating with teams,
+                and building solutions that create real value.
+            </p>
+
+            <p class="about-bio">
+                I believe that data has the power to tell compelling stories, support better decision-making,
+                and drive innovation. Beyond technical growth, I value <strong>integrity, adaptability,
+                and collaboration</strong> — and I'm excited to contribute to environments where innovation
+                and continuous improvement are encouraged.
+            </p>
+
+            <!-- What I do -->
+            <ul class="about-traits">
+                <li><i class="fas fa-check-circle"></i> Machine Learning &amp; Predictive Modelling</li>
+                <li><i class="fas fa-check-circle"></i> Data Analysis, EDA &amp; Visualisation</li>
+                <li><i class="fas fa-check-circle"></i> Model Deployment — Flask · Streamlit · Docker</li>
+                <li><i class="fas fa-check-circle"></i> Business Intelligence &amp; Power BI Dashboards</li>
+            </ul>
+
+            <!-- Stats row -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="num">8+</div>
+                    <div class="label">Projects</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">3</div>
+                    <div class="label">Internships</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">9.39</div>
+                    <div class="label">CGPA</div>
+                </div>
+                <div class="stat-card">
+                    <div class="num">3</div>
+                    <div class="label">Certifications</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills" id="skills">
+    <div class="section-title">
+        <span>WHAT I KNOW</span>
+        <h2>My Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+            <div class="skill-tags">
+                <span>Scikit-learn</span>
+                <span>XGBoost</span>
+                <span>Random Forest</span>
+                <span>SVM</span>
+                <span>Regression</span>
+                <span>Classification</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-chart-bar"></i> Data & Analytics</h3>
+            <div class="skill-tags">
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>Seaborn</span>
+                <span>Power BI</span>
+                <span>EDA</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+            <div class="skill-tags">
+                <span>Streamlit</span>
+                <span>Flask</span>
+                <span>Docker</span>
+                <span>Jupyter</span>
+                <span>Git</span>
+                <span>GitHub</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+    <div class="section-title">
+        <span>MY WORK</span>
+        <h2>Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- 1 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-futbol"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/FIFA-Player-Analytics-Dashboard" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>FIFA Player Analytics Dashboard</h3>
+            <p>Interactive dashboard for player performance prediction, scouting insights, and data visualization. Built with Streamlit and XGBoost.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Streamlit</span><span>XGBoost</span><span>Data Viz</span>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-plane"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/flight-fare-prediction" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Flight Fare Prediction</h3>
+            <p>End-to-end ML model to predict flight fares with deployment via Flask and Docker. Includes feature engineering and hyperparameter tuning.</p>
+            <div class="project-tags">
+                <span>XGBoost</span><span>Flask</span><span>Docker</span><span>Python</span>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-comment-dots"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/sentiment-analysis-dashboard" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Sentiment Analysis Dashboard</h3>
+            <p>AI-powered sentiment analysis dashboard using Linear SVM and TF-IDF vectorization to classify text as positive, negative, or neutral.</p>
+            <div class="project-tags">
+                <span>SVM</span><span>TF-IDF</span><span>NLP</span><span>Python</span>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-phone-slash"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/telecom-churn-prediction" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Telecom Churn Prediction</h3>
+            <p>Predicts customer churn using Random Forest and SVM. Covers EDA, feature preprocessing, model evaluation and business insight generation.</p>
+            <div class="project-tags">
+                <span>Random Forest</span><span>SVM</span><span>Scikit-learn</span><span>EDA</span>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-car"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/horizontechx_Car-Price-Prediction" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Car Price Prediction</h3>
+            <p>ML regression model predicting used car prices based on brand, mileage, year and fuel type. Built during internship at HorizontechX.</p>
+            <div class="project-tags">
+                <span>Regression</span><span>Pandas</span><span>Scikit-learn</span><span>EDA</span>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/horizontechx_tasks_Sales_Prediction" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Sales Prediction</h3>
+            <p>Forecasts future sales figures using historical data. Applies regression analysis and time-series techniques to support business planning.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Regression</span><span>Time Series</span><span>Pandas</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-users"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/Human-hr-analytics-dashboard" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>HR Analytics Dashboard</h3>
+            <p>Workforce analytics dashboard analyzing employee attrition, performance, and engagement patterns using Python and interactive visualizations.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Seaborn</span><span>Pandas</span><span>Analytics</span>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-icon"><i class="fas fa-virus-slash"></i></div>
+                <div class="project-links">
+                    <a href="https://github.com/khushigithub1/horizontechx_Unemployment-Analysis-COVID" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <h3>Unemployment Analysis — COVID-19</h3>
+            <p>Data analysis project exploring the impact of COVID-19 on unemployment rates across regions using EDA, visualizations and trend analysis.</p>
+            <div class="project-tags">
+                <span>EDA</span><span>Matplotlib</span><span>Pandas</span><span>COVID Data</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="projects-cta">
+        <a href="https://github.com/khushigithub1" target="_blank" rel="noopener" class="btn-outline">
+            <i class="fab fa-github"></i> View All on GitHub
+        </a>
+    </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience" id="experience">
+    <div class="section-title">
+        <span>MY JOURNEY</span>
+        <h2>Experience</h2>
+    </div>
+    <div class="inner">
+        <div class="timeline">
+
+            <!-- Role 1 — Most Recent -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Jun 2026 – Jul 2026</span>
+                    <h3>Data Science Intern</h3>
+                    <h4>HorizontechX</h4>
+                    <p>
+                        Worked on real-world ML projects including Car Price Prediction, Sales Forecasting,
+                        and Unemployment Analysis. Performed data cleaning, EDA, feature engineering,
+                        and built regression models to deliver accurate business predictions.
+                    </p>
+                    <div class="timeline-tags">
+                        <span>Python</span>
+                        <span>Regression</span>
+                        <span>EDA</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Oct 2025 – Apr 2026</span>
+                    <h3>Data Science Consultant Intern</h3>
+                    <h4>Rubixe — AI Solution Company</h4>
+                    <p>
+                        Contributed as a Data Science Consultant Intern at an AI-focused firm.
+                        Assisted in building and evaluating ML models, analyzing datasets,
+                        and translating data-driven findings into actionable business recommendations
+                        for clients across multiple domains.
+                    </p>
+                    <div class="timeline-tags">
+                        <span>Machine Learning</span>
+                        <span>Data Analysis</span>
+                        <span>Python</span>
+                        <span>AI Solutions</span>
+                        <span>Consulting</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Aug 2023 – Nov 2023</span>
+                    <h3>Software Engineer Trainee</h3>
+                    <h4>Areksoft Technologies Private Limited</h4>
+                    <p>
+                        Trained as a Software Engineer, gaining hands-on exposure to software
+                        development practices, coding standards, and collaborative workflows.
+                        Worked on development tasks and strengthened foundational programming
+                        and problem-solving skills.
+                    </p>
+                    <div class="timeline-tags">
+                        <span>Software Development</span>
+                        <span>Python</span>
+                        <span>Programming</span>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- end timeline -->
+    </div><!-- end inner -->
+</section>
+<section class="education" id="education">
+    <div class="section-title">
+        <span>MY BACKGROUND</span>
+        <h2>Education</h2>
+    </div>
+
+    <div class="edu-grid">
+
+        <!-- KL University -->
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="edu-info">
+                <span class="edu-year">2021 – 2024</span>
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <h4>KL University</h4>
+                <p>Specialized in Data Science, Machine Learning, Python programming, and Database Management. Graduated with a strong academic record.</p>
+                <div class="edu-score">
+                    <i class="fas fa-star"></i> CGPA &nbsp;<strong>9.39 / 10</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Narayana Junior College -->
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <div class="edu-info">
+                <span class="edu-year">2019 – 2021</span>
+                <h3>Intermediate (MPC / MEC)</h3>
+                <h4>Narayana Junior College</h4>
+                <p>Completed intermediate education with a strong focus on Mathematics, Physics, and Computer Science fundamentals.</p>
+                <div class="edu-score">
+                    <i class="fas fa-star"></i> Percentage &nbsp;<strong>85%</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- School -->
+        <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-book"></i></div>
+            <div class="edu-info">
+                <span class="edu-year">Completed 2019</span>
+                <h3>Secondary Education (10th)</h3>
+                <h4>Nagarjuna Talent School</h4>
+                <p>Completed schooling with distinction, building a strong foundation in sciences, mathematics, and analytical thinking.</p>
+                <div class="edu-score">
+                    <i class="fas fa-star"></i> CGPA &nbsp;<strong>9.8 / 10</strong>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Certificates Sub-section -->
+    <div class="cert-section" id="certificates">
+        <h3 class="cert-heading"><i class="fas fa-award"></i> Licenses &amp; Certifications</h3>
+        <div class="cert-grid">
+
+            <!-- Cert 1 — NASSCOM (2 images) -->
+            <div class="cert-card cert-img-card">
+                <div class="cert-images">
+                    <img src="assets/Nasscom Certificate -1.png" alt="NASSCOM Certificate page 1" loading="lazy">
+                    <img src="assets/Nasscom Certificate - 2.png" alt="NASSCOM Certificate page 2" loading="lazy">
+                </div>
+                <div class="cert-info">
+                    <h4>Certified Data Scientist</h4>
+                    <p class="cert-issuer"><i class="fas fa-building"></i> NASSCOM FutureSkills Prime</p>
+                    <p class="cert-meta">Issued Jun 2026 &nbsp;·&nbsp; ID: FSP/2026/6/10294165</p>
+                    <div class="cert-skills">
+                        <span>Data Science</span><span>Python</span><span>ML</span>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Cert 2 — IABAC Certified Data Scientist -->
+        <div class="cert-card cert-img-card">
+            <div class="cert-images cert-images--single cert-images--white">
+                <img src="assets/Certified Data Scientists.png" alt="IABAC Certified Data Scientist" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h4>Certified Data Scientist</h4>
+                <p class="cert-issuer"><i class="fas fa-building"></i> IABAC</p>
+                <p class="cert-meta">Issued May 2026 &nbsp;·&nbsp; Expires May 2029 &nbsp;·&nbsp; ID: IAB1120178847</p>
+                <div class="cert-skills">
+                    <span>Python</span><span>Machine Learning</span><span>Statistics</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cert 3 — IABAC Data Science Foundation -->
+        <div class="cert-card cert-img-card">
+            <div class="cert-images cert-images--single cert-images--white">
+                <img src="assets/data science foundation.png" alt="IABAC Data Science Foundation" loading="lazy">
+            </div>
+            <div class="cert-info">
+                <h4>Data Science Foundation</h4>
+                <p class="cert-issuer"><i class="fas fa-building"></i> IABAC</p>
+                <p class="cert-meta">Issued Apr 2026 &nbsp;·&nbsp; ID: IAB1120178748</p>
+                <div class="cert-skills">
+                    <span>Data Analysis</span><span>Statistics</span><span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-times"></i></button>
+        <img id="lightboxImg" src="" alt="Certificate full view">
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+    <div class="section-title">
+        <span>GET IN TOUCH</span>
+        <h2>Contact Me</h2>
+    </div>
+
+    <div class="contact-wrapper">
+
+        <div class="contact-info">
+            <h3>Let's work together</h3>
+            <p>I'm currently open to internship and full-time opportunities in Data Science, ML Engineering, and Data Analytics. Feel free to reach out!</p>
+
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:akankshasrivastav004@gmail.com">akankshasrivastav004@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/akanksha-srivastava-20a43623b/" target="_blank" rel="noopener">akanksha-srivastava</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <div>
+                        <span>GitHub</span>
+                        <a href="https://github.com/khushigithub1" target="_blank" rel="noopener">khushigithub1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email" required autocomplete="email">
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary send-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-connect">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to new opportunities, collaborations, and conversations. Don't be a stranger!</p>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/akanksha-srivastava-20a43623b/" target="_blank" rel="noopener" class="footer-social-btn linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/khushigithub1" target="_blank" rel="noopener" class="footer-social-btn github" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="mailto:akankshasrivastav004@gmail.com" class="footer-social-btn email" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+        <p>Designed &amp; Built by <span>Akanksha Srivastava</span></p>
+        <p class="footer-copy">&copy; 2025 Akanksha Srivastava. All rights reserved.</p>
+    </div>
+
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="home.js"></script>
+</body>
+</html>
